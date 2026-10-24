@@ -1,0 +1,20 @@
+miRNA ID,panel,LASSO5,direction,log2FoldChange,baseMean,padj,AUC_discovery,low_count_flag,myeloid_blood_flag
+hsa-miR-138-5p,S2_up8,True,up,3.834552232,1.332867425,1.83e-08,0.824,True,False
+hsa-miR-4455,S2_up8,False,up,3.984526672,1.25908269,3.39e-06,0.809,True,False
+hsa-miR-223-3p,S2_up8,False,up,1.563364212,17936.56531,1.21e-11,0.778,False,True
+hsa-let-7g-5p,S2_up8,True,up,1.019322906,5484.359585,5.75e-12,0.737,False,False
+hsa-miR-32-3p,S2_up8,True,up,1.897255709,1.233558013,0.001435938,0.665,True,False
+hsa-miR-24-3p,S2_up8,True,up,1.07995829,1095.645851,2.29e-12,0.644,False,False
+hsa-miR-142-3p,S2_up8,True,up,1.048005256,7582.818978,7.75e-07,0.643,False,True
+hsa-miR-766-5p,S2_up8,False,up,2.277548031,3.496528662,5.01e-06,0.607,True,False
+hsa-miR-106b-3p,S3_down11,False,down,-1.110452349,531.1485705,3.39e-09,0.908,False,False
+hsa-miR-4497,S3_down11,False,down,-1.38248103,2.378124088,0.035521891,0.686,True,False
+hsa-miR-660-3p,S3_down11,False,down,-1.747928982,0.780366768,0.022460161,0.667,True,False
+hsa-miR-30a-5p,S3_down11,False,down,-1.011126894,346.2359442,1.6e-08,0.658,False,False
+hsa-miR-3195,S3_down11,False,down,-2.762458639,0.93542242,0.000165236,0.657,True,False
+hsa-miR-500b-5p,S3_down11,False,down,-1.467973062,0.83326021,0.038624549,0.652,True,False
+hsa-miR-1976,S3_down11,False,down,-1.171733844,19.60555007,6.42e-09,0.627,False,False
+hsa-miR-106a-3p,S3_down11,False,down,-1.616522348,0.559266061,0.035808741,0.626,True,False
+hsa-miR-382-3p,S3_down11,False,down,-1.809416523,4.255721487,0.000274862,0.617,True,False
+hsa-miR-4639-5p,S3_down11,False,down,-1.496917146,0.661278869,0.023434244,0.613,True,False
+hsa-miR-6741-3p,S3_down11,False,down,-1.62875883,2.164597987,0.001461758,0.61,True,False

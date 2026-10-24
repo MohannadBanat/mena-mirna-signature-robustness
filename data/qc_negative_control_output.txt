@@ -1,0 +1,9 @@
+library quality (8 metrics): CV AUC mean 0.937, range 0.924-0.942 (20 x 10-fold); permuted labels: mean 0.496, max 0.658, n>=observed 0/200
+quality ratios only (4): CV AUC mean 0.931, range 0.924-0.936 (20 x 10-fold); permuted labels: mean 0.490, max 0.640, n>=observed 0/200
+LASSO5 score: CV AUC mean 0.917, range 0.914-0.920 (20 x 10-fold)
+library quality + LASSO5: CV AUC mean 0.975, range 0.965-0.981 (20 x 10-fold)
+fraction without adapter, AUC (95% CI): [0.925 0.887 0.957]
+LASSO5, AUC (95% CI): [0.922 0.878 0.958]
+Spearman LASSO5 vs no-adapter, cases: rho 0.14, p 0.081
+Spearman LASSO5 vs no-adapter, controls: rho 0.20, p 0.163
+control range 3.49-6.38%: cases 36, controls 48, LASSO5 AUC [0.932 0.878 0.975]

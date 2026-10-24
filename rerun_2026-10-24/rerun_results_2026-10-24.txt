@@ -1,0 +1,23 @@
+# Rerun results (RunPod pod vtz6ktw4i3sz7s, 2026-10-24; job 19:50-20:30 UTC, BC031 reprocessed and analyses rerun 20:49-20:51 UTC)
+Reference: miRBase 22.1 human mature (2,656 sequences) from RNAcentral (mirbase.org unreachable on 2026-10-24).
+Matrix: 1792 miRNAs x 200 libraries; UMI molecules 278,847,134; aligned reads 750,127,435.
+
+analysis.py (UMI): DE tested 290; DE (padj<0.05,|log2FC|>=1) 34 (22 up, 12 down); rho vs published log2FC 0.880 (n=288);
+ published DE tested 36, replicated 35; panel replicated 7/19 (LASSO5 3/5); miR-23a-3p log2FC 0.821 padj 8.15e-17;
+ r451/23a BC 3.998 vs HC 4.907 p=8.97e-07; r451/let-7a-5p BC -2.544 vs HC -2.448 p=0.8; depth AUC reads 0.735, UMI 0.593.
+
+A1/A2/A5 panel AUCs (152 vs 48), z-scored / mean log2 CPM:
+ UMI   Up8 0.924 (0.886-0.963) / 0.932; Down11 (10 scored) 0.633 (0.551-0.714) / 0.650; LASSO5 0.921 (0.881-0.961) / 0.917; High3 0.888 / 0.872; Low-count pair 0.858 / 0.867
+ reads Up8 0.919 (0.878-0.959) / 0.918; Down11 0.633 (0.552-0.713) / 0.651; LASSO5 0.914 (0.871-0.957) / 0.902; High3 0.891 / 0.875; Low-count pair 0.837 / 0.837
+ A1 decision (plan v4): reads 0.633 vs UMI 0.633 -> hypothesis NOT SUPPORTED
+A3: UMI tested 290, published DE tested 36 replicated 35, rho 0.880 (n=288), baseMean<10 rho 0.893 (n=25)
+    reads tested 398, published DE tested 50 replicated 41, rho 0.838 (n=391), baseMean<10 rho 0.764 (n=117); panel replicated 7 (same 7) for both
+A4: reads/molecule median 2.00 (CV 0.70) for mean<10 molecules (n=1514); 2.25 (0.54) for 10-100 (n=148); 2.38 (0.45) for >=100 (n=130)
+    library reads/molecule cases 2.65 vs controls 2.48, p=0.98; miR-1976 mean reads cases 5.2 vs controls 3.1, molecules 1.9 vs 1.1
+B nested CV L1-logistic (outer 10-fold x 10 seeds, inner 5-fold):
+ B1 UMI 290 features: AUC 0.999 (0.998-0.999), median 23 selected; LASSO5 selection: miR-24-3p 0.87, let-7g-5p 0.02, miR-138-5p/miR-32-3p/miR-142-3p 0.00
+    most selected: miR-130b-3p, miR-25-3p, miR-3168, miR-4455, miR-505-5p (1.00), miR-15b-5p, miR-186-5p, miR-9-5p (0.99), miR-146b-3p, miR-532-5p (0.97)
+ B2 reads: AUC 0.998 (0.997-0.999), median 24 selected; B3 UMI + 8 QC: AUC 1.000 (0.999-1.000), fraction without adapter selected in all fits
+GSE73002 rerun (gse.py): LASSO5 dir BC vs benign 0.5585 (0.4823-0.6346), spec 0.0 (0-5.56); benign vs ctrl 0.9836; BC vs ctrl 0.9509, spec vs ctrl 0.8857, PPV 0.5% 3.81%
+ HIGH3 dir 0.5466 (0.4730-0.6203), spec 0 (0-3.70); 0.9872; 0.9570, PPV 4.16% | LASSO5 refit 0.5365 (0.4665-0.6065), spec 3.70 (0-9.26); 0.9889; 0.9600, PPV 4.12%
+ HIGH3 refit 0.5325 (0.4625-0.6026), spec 3.70 (0-9.26); 0.9886; 0.9594, PPV 4.41% | Shimomura refit (positive control) 0.5743 (0.5055-0.6432), spec 9.26 (1.85-18.52); 1.0000; 0.9971
