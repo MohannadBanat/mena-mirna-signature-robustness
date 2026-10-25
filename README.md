@@ -1,6 +1,6 @@
-# Re-evaluating a circulating microRNA signature for breast cancer — code and analysis plan
+# Robustness of a machine-learning-derived circulating microRNA signature for breast cancer — code and analysis plans
 
-Code accompanying: Abu Owida H., Alsarhan A., Banat M., Al-Fraihat D., Algarni A. "Re-Evaluating a Machine-Learning-Derived Circulating MicroRNA Signature for Breast Cancer: Sex Confounding, Library Quality and Specificity Against Benign Breast Disease." Submitted to *Bioengineering* (MDPI), 2026.
+Code accompanying: Abu Owida H., Alsarhan A., Banat M., Al-Fraihat D., Algarni A. "Robustness of a Machine-Learning-Derived Circulating MicroRNA Signature for Breast Cancer: Confounding, Library Quality and Benign-Disease Specificity." Submitted to *Bioengineering* (MDPI), 2026.
 
 ## Contents
 - `pipeline/` — download of PRJNA1436574 (ENA), read processing (QIAseq adapter trimming, 12-nt UMI extraction, 16–30 nt inserts, Bowtie 1.3.1, UMI-tools 1.1.5 dedup, miRBase mapping), and the same pipeline for the tumour cohort PRJNA953015 (`t.sh`).
