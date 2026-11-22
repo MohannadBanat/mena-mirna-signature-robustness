@@ -36,7 +36,7 @@ one() {  # $1 = run accession, $2 = sample alias
   # completeness is checked afterwards against ENA's read_count (runs.tsv), since the ENA MD5 does not apply.
   if [ ! -s fastq/$R.fastq.gz ]; then
     curl -fsSL --retry 5 -o fastq/$R.sra https://sra-pub-run-odp.s3.amazonaws.com/sra/$R/$R
-    fasterq-dump -e 2 --stdout fastq/$R.sra 2> logs/$S.fqd.txt | pigz -1 -p 2 > fastq/$R.fastq.gz
+    fasterq-dump -e 2 --split-spot --stdout fastq/$R.sra 2> logs/$S.fqd.txt | pigz -1 -p 2 > fastq/$R.fastq.gz
     rm -f fastq/$R.sra
   fi
   python3 - "$R" "$S" <<'PY'
