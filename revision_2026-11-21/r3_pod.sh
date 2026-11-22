@@ -2,8 +2,8 @@
 # Plan v5, R3 / amendment v5a, A2: alignment sensitivity on a RunPod CPU pod.
 # Usage: bash r3_pod.sh setup | test | all | matrix | one RUN SAMPLE
 # Trimming, UMI capture and insert filter are copied from pipeline/pod_pipeline.sh.
-# --strata is omitted: this bowtie 1.3.1 build exits with an error when it is combined with -k 1,
-# where the bowtie manual states it has no effect.
+# Setting A and the UMI step match the committed pipeline (pipeline/pod_pipeline.sh): bowtie -v 1 --best -k 1 --norc;
+# umi_tools dedup --per-gene --per-contig --method=unique (see amendment v5b).
 set -euo pipefail
 W=/workspace/r3; mkdir -p $W/{fastq,umi,logs,ref,counts/A,counts/B,counts/C}; cd $W
 export MAMBA_ROOT_PREFIX=/root/micromamba
@@ -65,12 +65,12 @@ PY
   rm -f fastq/$R.fastq.gz
   for X in A B C; do
     case $X in
-      A) bowtie -p 1 -n 1 -l 16 --best -k 1 --norc -S ref/bt1 umi/$S.fq 2> logs/$S.A.txt ;;
+      A) bowtie -p 1 -v 1 --best -k 1 --norc -S ref/bt1 umi/$S.fq 2> logs/$S.A.txt ;;
       B) bowtie -p 1 -v 0 --best -k 1 --norc -S ref/bt1 umi/$S.fq 2> logs/$S.B.txt ;;
       C) bowtie2 -p 1 --end-to-end --very-sensitive -L 10 -N 0 --norc --seed 0 -x ref/bt2 -U umi/$S.fq 2> logs/$S.C.txt ;;
     esac | samtools view -b -F 4 - | samtools sort -o umi/$S.$X.bam - && samtools index umi/$S.$X.bam
     samtools idxstats umi/$S.$X.bam | awk '$3>0{print $1"\t"$3}' > counts/$X/$S.reads.tsv
-    umi_tools dedup -I umi/$S.$X.bam --per-contig --method=unique --umi-separator=_ -S umi/$S.$X.dedup.bam -L logs/$S.$X.dedup.txt
+    umi_tools dedup -I umi/$S.$X.bam --per-gene --per-contig --method=unique --umi-separator=_ -S umi/$S.$X.dedup.bam -L logs/$S.$X.dedup.txt
     samtools index umi/$S.$X.dedup.bam
     samtools idxstats umi/$S.$X.dedup.bam | awk '$3>0{print $1"\t"$3}' > counts/$X/$S.umi.tsv.tmp
     mv counts/$X/$S.umi.tsv.tmp counts/$X/$S.umi.tsv
