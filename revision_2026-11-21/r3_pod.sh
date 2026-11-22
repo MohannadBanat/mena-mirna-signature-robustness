@@ -13,7 +13,7 @@ setup() {
   apt-get update -qq && apt-get install -y -qq curl bzip2 >/dev/null
   [ -x /usr/local/bin/micromamba ] || curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xj -C /usr/local bin/micromamba
   [ -d /root/micromamba/envs/r3 ] || micromamba create -y -n r3 -c conda-forge -c bioconda \
-    python=3.11 umi_tools=1.1.5 bowtie=1.3.1 bowtie2=2.5.4 samtools=1.20 pandas aria2 >/dev/null
+    python=3.11 umi_tools=1.1.5 bowtie=1.3.1 bowtie2=2.5.4 samtools=1.20 sra-tools=3.1.1 pigz pandas aria2 >/dev/null
   curl -fsSL "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJNA1436574&result=read_run&fields=run_accession,sample_alias,read_count,fastq_md5,fastq_ftp&format=tsv" > runs.tsv
   echo "runs: $(($(wc -l < runs.tsv)-1))"
   curl -fsSL $GH/rerun_2026-10-24/mkref.py -o mkref.py && python3 mkref.py
@@ -32,8 +32,13 @@ one() {  # $1 = run accession, $2 = sample alias
   local URL MD5
   URL=$(awk -F'\t' -v r=$R '$1==r{print "https://"$5}' runs.tsv)
   MD5=$(awk -F'\t' -v r=$R '$1==r{print $4}' runs.tsv)
-  [ -s fastq/$R.fastq.gz ] || aria2c -q -x 4 -d fastq -o $R.fastq.gz "$URL"
-  echo "$MD5  fastq/$R.fastq.gz" | md5sum -c --quiet - || { echo "MD5 FAIL $R"; rm -f fastq/$R.fastq.gz; return 1; }
+  # ENA served this pod at ~0.15 MB/s on 22 Nov 2026, so reads come from NCBI's SRA mirror on AWS instead;
+  # completeness is checked afterwards against ENA's read_count (runs.tsv), since the ENA MD5 does not apply.
+  if [ ! -s fastq/$R.fastq.gz ]; then
+    curl -fsSL --retry 5 -o fastq/$R.sra https://sra-pub-run-odp.s3.amazonaws.com/sra/$R/$R
+    fasterq-dump -e 2 --stdout fastq/$R.sra 2> logs/$S.fqd.txt | pigz -1 -p 2 > fastq/$R.fastq.gz
+    rm -f fastq/$R.sra
+  fi
   python3 - "$R" "$S" <<'PY'
 import gzip,sys,re
 R,S=sys.argv[1],sys.argv[2]
