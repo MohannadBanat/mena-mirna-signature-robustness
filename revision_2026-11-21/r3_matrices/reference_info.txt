@@ -1,0 +1,2 @@
+hsa mature: 2656
+f4197e442a66fb407d3b386e30a6ac1fafd44cf4d66c9bbf52b73c4d47904363  ref/hsa_mature.fa

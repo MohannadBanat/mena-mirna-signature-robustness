@@ -1,0 +1,12 @@
+{
+ "A_down11_umi_z": 0.633,
+ "main_manuscript": 0.66,
+ "within_0.02_of_main": false,
+ "rerun_2026-10-24": 0.633,
+ "A_vs_rerun_spearman_median": 1.0,
+ "A_vs_rerun_spearman_min": 0.9876,
+ "miRNAs_common": 1791,
+ "down11_BC_min": 0.623,
+ "down11_BC_max": 0.656,
+ "verdict": "robust to alignment"
+}

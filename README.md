@@ -1,6 +1,6 @@
 # Robustness of a machine-learning-derived circulating microRNA signature for breast cancer — code and analysis plans
 
-Code accompanying: Abu Owida H., Alsarhan A., Banat M., Al-Fraihat D., Algarni A. "Robustness of a Machine-Learning-Derived Circulating MicroRNA Signature for Breast Cancer: Confounding, Library Quality and Benign-Disease Specificity." Submitted to *Bioengineering* (MDPI), 2026.
+Code accompanying: Abu Owida H., Alsarhan A., Banat M., Al-Fraihat D., Algarni A. "Robustness of a Machine-Learning-Derived Circulating MicroRNA Signature for Breast Cancer: Confounding, Library Quality and Low-Count Features." Resubmitted to *Bioengineering* (MDPI), 2026, as a revision of manuscript bioengineering-4685597 (earlier title: "…Confounding, Library Quality and Benign-Disease Specificity").
 
 ## Contents
 - `pipeline/` — download of PRJNA1436574 (ENA), read processing (QIAseq adapter trimming, 12-nt UMI extraction, 16–30 nt inserts, Bowtie 1.3.1, UMI-tools 1.1.5 dedup, miRBase mapping), and the same pipeline for the tumour cohort PRJNA953015 (`t.sh`).
@@ -21,3 +21,7 @@ The UMI count matrix (1,864 miRNAs × 200 libraries) is regenerated from the raw
 (`run_all.sh`), the pipeline as run (with a fallback that builds the miRBase 22.1 human reference from RNAcentral, used because
 mirbase.org was unreachable that day; `mkref.py`), the read-count versus UMI and nested cross-validation analyses (`extra.py`), and
 the key outputs (`rerun_results_2026-10-24.txt`). Under plan v4 the UMI-collapsing explanation for the down-regulated panel was not supported.
+
+## Revision analyses (21–22 November 2026)
+`revision_2026-11-21/` holds the revision plan v5 and its two amendments (each pushed to this repository before the analyses it describes were run; SHA-256 checksums included), the scripts, and the outputs: a label-permutation test of the nested cross-validated model, the panel scores under five normalisations and three read-alignment settings (count matrices included), single-metric library-quality tests, the LASSO5 results with counts per million and DESeq2 median-of-ratios side by side, and the revised Figure 3. See `revision_2026-11-21/README.md`.
+

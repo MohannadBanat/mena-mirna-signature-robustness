@@ -1,0 +1,91 @@
+{
+ "CPM": {
+  "reproduction_max_abs_diff": 0.0005,
+  "AUC_all": [
+   0.922,
+   0.878,
+   0.958
+  ],
+  "matched": {
+   "cases": 36,
+   "controls": 48,
+   "AUC": [
+    0.932,
+    0.878,
+    0.975
+   ]
+  },
+  "LASSO5 alone": [
+   0.917,
+   0.914,
+   0.92
+  ],
+  "quality + LASSO5": [
+   0.975,
+   0.965,
+   0.981
+  ],
+  "cluster": {
+   "mean_BC144_152": -0.74,
+   "all_below_zero": true,
+   "mean_other_cases": 0.33,
+   "mean_controls": -0.84,
+   "pct_cases_below0": 32,
+   "pct_controls_below0": 96,
+   "draws_le_cluster_mean_of_100000": 0,
+   "AUC_excl_cluster": [
+    0.943,
+    0.904,
+    0.974
+   ],
+   "spearman_score_umi_cases": [
+    -0.26,
+    0.0011
+   ]
+  }
+ },
+ "median-of-ratios": {
+  "AUC_all": [
+   0.957,
+   0.924,
+   0.983
+  ],
+  "matched": {
+   "cases": 36,
+   "controls": 48,
+   "AUC": [
+    0.968,
+    0.932,
+    0.995
+   ]
+  },
+  "LASSO5 alone": [
+   0.954,
+   0.951,
+   0.956
+  ],
+  "quality + LASSO5": [
+   0.977,
+   0.969,
+   0.981
+  ],
+  "cluster": {
+   "mean_BC144_152": -0.45,
+   "all_below_zero": true,
+   "mean_other_cases": 0.31,
+   "mean_controls": -0.83,
+   "pct_cases_below0": 32,
+   "pct_controls_below0": 96,
+   "draws_le_cluster_mean_of_100000": 0,
+   "AUC_excl_cluster": [
+    0.968,
+    0.939,
+    0.99
+   ],
+   "spearman_score_umi_cases": [
+    -0.27,
+    0.00096
+   ]
+  }
+ }
+}

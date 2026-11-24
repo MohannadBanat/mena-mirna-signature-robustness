@@ -1,0 +1,161 @@
+matrices	unit	normalisation	panel	score	n_scored	AUC	lo	hi
+main	UMI	CPM	Up8	z-score	8	0.925	0.887	0.963
+main	UMI	CPM	Up8	mean log	8	0.933	0.9	0.967
+main	UMI	CPM	Down11	z-score	9	0.66	0.575	0.746
+main	UMI	CPM	Down11	mean log	9	0.669	0.587	0.751
+main	UMI	CPM	LASSO5	z-score	5	0.922	0.882	0.962
+main	UMI	CPM	LASSO5	mean log	5	0.918	0.877	0.958
+main	UMI	CPM	High3	z-score	3	0.89	0.836	0.944
+main	UMI	CPM	High3	mean log	3	0.872	0.813	0.932
+main	UMI	median-of-ratios	Up8	z-score	8	0.958	0.931	0.985
+main	UMI	median-of-ratios	Up8	mean log	8	0.962	0.939	0.985
+main	UMI	median-of-ratios	Down11	z-score	9	0.779	0.703	0.854
+main	UMI	median-of-ratios	Down11	mean log	9	0.783	0.709	0.857
+main	UMI	median-of-ratios	LASSO5	z-score	5	0.957	0.927	0.986
+main	UMI	median-of-ratios	LASSO5	mean log	5	0.956	0.928	0.984
+main	UMI	median-of-ratios	High3	z-score	3	0.935	0.896	0.975
+main	UMI	median-of-ratios	High3	mean log	3	0.921	0.874	0.968
+main	UMI	TMM	Up8	z-score	8	0.963	0.937	0.989
+main	UMI	TMM	Up8	mean log	8	0.968	0.947	0.989
+main	UMI	TMM	Down11	z-score	9	0.74	0.66	0.819
+main	UMI	TMM	Down11	mean log	9	0.756	0.681	0.831
+main	UMI	TMM	LASSO5	z-score	5	0.962	0.936	0.988
+main	UMI	TMM	LASSO5	mean log	5	0.964	0.94	0.988
+main	UMI	TMM	High3	z-score	3	0.936	0.898	0.974
+main	UMI	TMM	High3	mean log	3	0.929	0.889	0.97
+main	UMI	upper-quartile	Up8	z-score	0	0.0	0.0	0.0
+main	UMI	upper-quartile	Up8	mean log	0	0.686	0.566	0.806
+main	UMI	upper-quartile	Down11	z-score	0	0.301	0.237	0.364
+main	UMI	upper-quartile	Down11	mean log	0	0.71	0.63	0.79
+main	UMI	upper-quartile	LASSO5	z-score	0	0.0	0.0	0.0
+main	UMI	upper-quartile	LASSO5	mean log	0	0.682	0.562	0.802
+main	UMI	upper-quartile	High3	z-score	0	0.0	0.0	0.0
+main	UMI	upper-quartile	High3	mean log	0	0.655	0.536	0.774
+main	UMI	quantile	Up8	z-score	8	0.964	0.939	0.988
+main	UMI	quantile	Up8	mean log	8	0.966	0.944	0.987
+main	UMI	quantile	Down11	z-score	9	0.807	0.735	0.879
+main	UMI	quantile	Down11	mean log	9	0.835	0.766	0.903
+main	UMI	quantile	LASSO5	z-score	5	0.964	0.941	0.987
+main	UMI	quantile	LASSO5	mean log	5	0.963	0.94	0.986
+main	UMI	quantile	High3	z-score	3	0.947	0.913	0.981
+main	UMI	quantile	High3	mean log	3	0.933	0.892	0.974
+main	reads	CPM	Up8	z-score	8	0.919	0.879	0.959
+main	reads	CPM	Up8	mean log	8	0.918	0.878	0.959
+main	reads	CPM	Down11	z-score	9	0.644	0.558	0.73
+main	reads	CPM	Down11	mean log	9	0.659	0.576	0.743
+main	reads	CPM	LASSO5	z-score	5	0.915	0.873	0.958
+main	reads	CPM	LASSO5	mean log	5	0.903	0.856	0.951
+main	reads	CPM	High3	z-score	3	0.892	0.838	0.946
+main	reads	CPM	High3	mean log	3	0.876	0.817	0.936
+main	reads	median-of-ratios	Up8	z-score	8	0.958	0.931	0.984
+main	reads	median-of-ratios	Up8	mean log	8	0.957	0.932	0.982
+main	reads	median-of-ratios	Down11	z-score	9	0.767	0.691	0.843
+main	reads	median-of-ratios	Down11	mean log	9	0.726	0.645	0.808
+main	reads	median-of-ratios	LASSO5	z-score	5	0.957	0.928	0.986
+main	reads	median-of-ratios	LASSO5	mean log	5	0.94	0.906	0.974
+main	reads	median-of-ratios	High3	z-score	3	0.937	0.899	0.975
+main	reads	median-of-ratios	High3	mean log	3	0.923	0.878	0.968
+main	reads	TMM	Up8	z-score	8	0.961	0.934	0.988
+main	reads	TMM	Up8	mean log	8	0.963	0.938	0.987
+main	reads	TMM	Down11	z-score	9	0.743	0.666	0.82
+main	reads	TMM	Down11	mean log	9	0.76	0.688	0.833
+main	reads	TMM	LASSO5	z-score	5	0.958	0.93	0.985
+main	reads	TMM	LASSO5	mean log	5	0.953	0.923	0.983
+main	reads	TMM	High3	z-score	3	0.939	0.903	0.975
+main	reads	TMM	High3	mean log	3	0.933	0.894	0.972
+main	reads	upper-quartile	Up8	z-score	0	0.0	0.0	0.0
+main	reads	upper-quartile	Up8	mean log	0	0.675	0.556	0.794
+main	reads	upper-quartile	Down11	z-score	0	0.301	0.237	0.364
+main	reads	upper-quartile	Down11	mean log	0	0.704	0.621	0.786
+main	reads	upper-quartile	LASSO5	z-score	0	0.0	0.0	0.0
+main	reads	upper-quartile	LASSO5	mean log	0	0.663	0.544	0.782
+main	reads	upper-quartile	High3	z-score	0	0.0	0.0	0.0
+main	reads	upper-quartile	High3	mean log	0	0.645	0.529	0.762
+main	reads	quantile	Up8	z-score	8	0.963	0.937	0.988
+main	reads	quantile	Up8	mean log	8	0.963	0.939	0.986
+main	reads	quantile	Down11	z-score	9	0.821	0.753	0.89
+main	reads	quantile	Down11	mean log	9	0.837	0.772	0.902
+main	reads	quantile	LASSO5	z-score	5	0.96	0.934	0.985
+main	reads	quantile	LASSO5	mean log	5	0.952	0.922	0.981
+main	reads	quantile	High3	z-score	3	0.943	0.909	0.978
+main	reads	quantile	High3	mean log	3	0.931	0.889	0.973
+reproduction	UMI	CPM	Up8	z-score	8	0.924	0.886	0.963
+reproduction	UMI	CPM	Up8	mean log	8	0.932	0.898	0.966
+reproduction	UMI	CPM	Down11	z-score	10	0.633	0.551	0.714
+reproduction	UMI	CPM	Down11	mean log	10	0.65	0.571	0.728
+reproduction	UMI	CPM	LASSO5	z-score	5	0.921	0.881	0.961
+reproduction	UMI	CPM	LASSO5	mean log	5	0.917	0.875	0.958
+reproduction	UMI	CPM	High3	z-score	3	0.888	0.834	0.943
+reproduction	UMI	CPM	High3	mean log	3	0.872	0.812	0.931
+reproduction	UMI	median-of-ratios	Up8	z-score	8	0.955	0.926	0.983
+reproduction	UMI	median-of-ratios	Up8	mean log	8	0.96	0.937	0.984
+reproduction	UMI	median-of-ratios	Down11	z-score	10	0.725	0.647	0.803
+reproduction	UMI	median-of-ratios	Down11	mean log	10	0.745	0.67	0.821
+reproduction	UMI	median-of-ratios	LASSO5	z-score	5	0.955	0.924	0.986
+reproduction	UMI	median-of-ratios	LASSO5	mean log	5	0.954	0.925	0.984
+reproduction	UMI	median-of-ratios	High3	z-score	3	0.933	0.892	0.975
+reproduction	UMI	median-of-ratios	High3	mean log	3	0.919	0.871	0.967
+reproduction	UMI	TMM	Up8	z-score	8	0.964	0.939	0.989
+reproduction	UMI	TMM	Up8	mean log	8	0.967	0.946	0.989
+reproduction	UMI	TMM	Down11	z-score	10	0.686	0.605	0.766
+reproduction	UMI	TMM	Down11	mean log	10	0.712	0.635	0.79
+reproduction	UMI	TMM	LASSO5	z-score	5	0.961	0.936	0.987
+reproduction	UMI	TMM	LASSO5	mean log	5	0.964	0.94	0.988
+reproduction	UMI	TMM	High3	z-score	3	0.938	0.903	0.974
+reproduction	UMI	TMM	High3	mean log	3	0.929	0.889	0.969
+reproduction	UMI	upper-quartile	Up8	z-score	0	0.0	0.0	0.0
+reproduction	UMI	upper-quartile	Up8	mean log	0	0.706	0.587	0.825
+reproduction	UMI	upper-quartile	Down11	z-score	0	0.314	0.251	0.378
+reproduction	UMI	upper-quartile	Down11	mean log	0	0.66	0.575	0.746
+reproduction	UMI	upper-quartile	LASSO5	z-score	0	0.0	0.0	0.0
+reproduction	UMI	upper-quartile	LASSO5	mean log	0	0.703	0.583	0.822
+reproduction	UMI	upper-quartile	High3	z-score	0	0.0	0.0	0.0
+reproduction	UMI	upper-quartile	High3	mean log	0	0.681	0.563	0.799
+reproduction	UMI	quantile	Up8	z-score	8	0.962	0.937	0.987
+reproduction	UMI	quantile	Up8	mean log	8	0.964	0.942	0.986
+reproduction	UMI	quantile	Down11	z-score	10	0.763	0.689	0.837
+reproduction	UMI	quantile	Down11	mean log	10	0.797	0.727	0.867
+reproduction	UMI	quantile	LASSO5	z-score	5	0.963	0.939	0.987
+reproduction	UMI	quantile	LASSO5	mean log	5	0.961	0.936	0.985
+reproduction	UMI	quantile	High3	z-score	3	0.941	0.905	0.978
+reproduction	UMI	quantile	High3	mean log	3	0.927	0.883	0.971
+reproduction	reads	CPM	Up8	z-score	8	0.919	0.878	0.959
+reproduction	reads	CPM	Up8	mean log	8	0.918	0.877	0.958
+reproduction	reads	CPM	Down11	z-score	10	0.633	0.552	0.713
+reproduction	reads	CPM	Down11	mean log	10	0.651	0.573	0.729
+reproduction	reads	CPM	LASSO5	z-score	5	0.914	0.871	0.957
+reproduction	reads	CPM	LASSO5	mean log	5	0.902	0.855	0.95
+reproduction	reads	CPM	High3	z-score	3	0.891	0.837	0.945
+reproduction	reads	CPM	High3	mean log	3	0.875	0.815	0.935
+reproduction	reads	median-of-ratios	Up8	z-score	8	0.954	0.926	0.983
+reproduction	reads	median-of-ratios	Up8	mean log	8	0.954	0.928	0.981
+reproduction	reads	median-of-ratios	Down11	z-score	10	0.728	0.653	0.804
+reproduction	reads	median-of-ratios	Down11	mean log	10	0.704	0.624	0.784
+reproduction	reads	median-of-ratios	LASSO5	z-score	5	0.954	0.922	0.985
+reproduction	reads	median-of-ratios	LASSO5	mean log	5	0.938	0.903	0.974
+reproduction	reads	median-of-ratios	High3	z-score	3	0.932	0.89	0.973
+reproduction	reads	median-of-ratios	High3	mean log	3	0.917	0.868	0.966
+reproduction	reads	TMM	Up8	z-score	8	0.962	0.936	0.988
+reproduction	reads	TMM	Up8	mean log	8	0.963	0.938	0.987
+reproduction	reads	TMM	Down11	z-score	10	0.717	0.641	0.793
+reproduction	reads	TMM	Down11	mean log	10	0.749	0.676	0.822
+reproduction	reads	TMM	LASSO5	z-score	5	0.956	0.927	0.985
+reproduction	reads	TMM	LASSO5	mean log	5	0.953	0.923	0.983
+reproduction	reads	TMM	High3	z-score	3	0.939	0.902	0.976
+reproduction	reads	TMM	High3	mean log	3	0.933	0.893	0.973
+reproduction	reads	upper-quartile	Up8	z-score	0	0.0	0.0	0.0
+reproduction	reads	upper-quartile	Up8	mean log	0	0.696	0.578	0.814
+reproduction	reads	upper-quartile	Down11	z-score	0	0.314	0.251	0.378
+reproduction	reads	upper-quartile	Down11	mean log	0	0.672	0.587	0.756
+reproduction	reads	upper-quartile	LASSO5	z-score	0	0.0	0.0	0.0
+reproduction	reads	upper-quartile	LASSO5	mean log	0	0.684	0.566	0.802
+reproduction	reads	upper-quartile	High3	z-score	0	0.0	0.0	0.0
+reproduction	reads	upper-quartile	High3	mean log	0	0.668	0.552	0.784
+reproduction	reads	quantile	Up8	z-score	8	0.962	0.936	0.987
+reproduction	reads	quantile	Up8	mean log	8	0.96	0.935	0.985
+reproduction	reads	quantile	Down11	z-score	10	0.79	0.721	0.86
+reproduction	reads	quantile	Down11	mean log	10	0.826	0.761	0.891
+reproduction	reads	quantile	LASSO5	z-score	5	0.956	0.929	0.983
+reproduction	reads	quantile	LASSO5	mean log	5	0.949	0.919	0.98
+reproduction	reads	quantile	High3	z-score	3	0.939	0.901	0.976
+reproduction	reads	quantile	High3	mean log	3	0.927	0.882	0.971

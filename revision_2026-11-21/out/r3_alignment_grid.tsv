@@ -1,0 +1,55 @@
+setting	unit	panel	score	n_scored_or_total	AUC	lo	hi
+A	umi	Up8	z-score	8	0.924	0.886	0.963
+A	umi	Up8	mean log	8	0.932	0.898	0.966
+A	umi	Down11	z-score	10	0.633	0.551	0.715
+A	umi	Down11	mean log	10	0.65	0.572	0.729
+A	umi	LASSO5	z-score	5	0.921	0.881	0.961
+A	umi	LASSO5	mean log	5	0.917	0.875	0.958
+A	umi	High3	z-score	3	0.888	0.833	0.943
+A	umi	High3	mean log	3	0.872	0.812	0.931
+A	umi	_total_molecules_or_reads		278846867			
+A	reads	Up8	z-score	8	0.919	0.878	0.959
+A	reads	Up8	mean log	8	0.918	0.877	0.958
+A	reads	Down11	z-score	10	0.632	0.551	0.713
+A	reads	Down11	mean log	10	0.651	0.574	0.729
+A	reads	LASSO5	z-score	5	0.914	0.871	0.957
+A	reads	LASSO5	mean log	5	0.902	0.855	0.95
+A	reads	High3	z-score	3	0.891	0.837	0.945
+A	reads	High3	mean log	3	0.875	0.815	0.935
+A	reads	_total_molecules_or_reads		750127435			
+B	umi	Up8	z-score	8	0.903	0.856	0.95
+B	umi	Up8	mean log	8	0.898	0.85	0.947
+B	umi	Down11	z-score	10	0.637	0.556	0.718
+B	umi	Down11	mean log	10	0.656	0.578	0.735
+B	umi	LASSO5	z-score	5	0.921	0.88	0.962
+B	umi	LASSO5	mean log	5	0.917	0.875	0.959
+B	umi	High3	z-score	3	0.887	0.833	0.942
+B	umi	High3	mean log	3	0.87	0.81	0.931
+B	umi	_total_molecules_or_reads		270031302			
+B	reads	Up8	z-score	8	0.897	0.848	0.946
+B	reads	Up8	mean log	8	0.882	0.827	0.937
+B	reads	Down11	z-score	10	0.628	0.546	0.71
+B	reads	Down11	mean log	10	0.646	0.566	0.725
+B	reads	LASSO5	z-score	5	0.913	0.869	0.957
+B	reads	LASSO5	mean log	5	0.901	0.852	0.949
+B	reads	High3	z-score	3	0.888	0.833	0.944
+B	reads	High3	mean log	3	0.873	0.813	0.934
+B	reads	_total_molecules_or_reads		719187490			
+C	umi	Up8	z-score	8	0.925	0.888	0.963
+C	umi	Up8	mean log	8	0.933	0.899	0.966
+C	umi	Down11	z-score	10	0.626	0.544	0.709
+C	umi	Down11	mean log	10	0.651	0.572	0.73
+C	umi	LASSO5	z-score	5	0.922	0.882	0.962
+C	umi	LASSO5	mean log	5	0.919	0.879	0.959
+C	umi	High3	z-score	3	0.891	0.838	0.944
+C	umi	High3	mean log	3	0.872	0.813	0.932
+C	umi	_total_molecules_or_reads		286255739			
+C	reads	Up8	z-score	8	0.919	0.879	0.958
+C	reads	Up8	mean log	8	0.916	0.875	0.957
+C	reads	Down11	z-score	10	0.623	0.542	0.704
+C	reads	Down11	mean log	10	0.65	0.572	0.729
+C	reads	LASSO5	z-score	5	0.916	0.874	0.958
+C	reads	LASSO5	mean log	5	0.903	0.855	0.95
+C	reads	High3	z-score	3	0.893	0.841	0.946
+C	reads	High3	mean log	3	0.877	0.817	0.936
+C	reads	_total_molecules_or_reads		767915455			

@@ -1,0 +1,11 @@
+20/200 done, 63s, running mean 0.498
+40/200 done, 121s, running mean 0.499
+60/200 done, 178s, running mean 0.497
+80/200 done, 233s, running mean 0.494
+100/200 done, 292s, running mean 0.494
+120/200 done, 350s, running mean 0.496
+140/200 done, 408s, running mean 0.499
+160/200 done, 468s, running mean 0.499
+180/200 done, 525s, running mean 0.497
+200/200 done, 582s, running mean 0.497
+{"observed": 0.9992, "n_perm": 200, "null_mean": 0.4965, "null_sd": 0.0649, "null_p95": 0.603, "null_max": 0.6796, "n_null_ge_obs": 0, "p": 0.00498}

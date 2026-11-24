@@ -1,0 +1,9 @@
+metric	direction	AUC (either direction)	lo	hi
+Raw reads	higher in cases	0.735	0.651	0.819
+Fraction without adapter	higher in cases	0.925	0.89	0.96
+Fraction with insert outside 16-30 nt	higher in cases	0.526	0.42	0.633
+Retained inserts	higher in cases	0.641	0.548	0.734
+Alignment rate	lower in cases	0.645	0.56	0.73
+Duplication rate	lower in cases	0.501	0.41	0.591
+UMI molecules	higher in cases	0.595	0.504	0.686
+miRNAs detected	higher in cases	0.655	0.567	0.742

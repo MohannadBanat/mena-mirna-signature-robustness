@@ -34,10 +34,10 @@ g.to_csv(f"{OUT}/r3_alignment_grid.tsv", sep="\t", index=False)
 A = g[(g.setting == "A") & (g.unit == "umi") & (g.panel == "Down11") & (g.score == "z-score")].AUC.iloc[0]
 Au = pd.read_csv(f"{D}/r3_A_umi.tsv", sep="\t", index_col=0); Ru = pd.read_csv(f"{W}/rerun/counts_matrix_umi.tsv", sep="\t", index_col=0)
 common = Au.index.intersection(Ru.index); rhos = [spearmanr(Au.loc[common, s], Ru.loc[common, s]).statistic for s in sorted(Au.columns)]
-chk = {"A_down11_umi_z": A, "main_manuscript": 0.660, "within_0.02_of_main": abs(A - 0.660) <= 0.02, "rerun_2026-10-24": 0.633,
+chk = {"A_down11_umi_z": A, "main_manuscript": 0.660, "within_0.02_of_main": bool(abs(A - 0.660) <= 0.02), "rerun_2026-10-24": 0.633,
        "A_vs_rerun_spearman_median": round(float(np.median(rhos)), 4), "A_vs_rerun_spearman_min": round(float(np.min(rhos)), 4), "miRNAs_common": len(common)}
 dn = g[(g.setting.isin(["B", "C"])) & (g.panel == "Down11")].AUC
-chk["down11_BC_min"], chk["down11_BC_max"] = float(dn.min()), float(dn.max())
+chk["down11_BC_min"], chk["down11_BC_max"] = float(dn.min()), float(dn.max()); chk["A_down11_umi_z"] = float(chk["A_down11_umi_z"])
 chk["verdict"] = "pipeline-sensitive" if dn.max() >= 0.75 else ("robust to alignment" if dn.max() < 0.70 else "partial")
 json.dump(chk, open(f"{OUT}/r3_decision.json", "w"), indent=1); print(json.dumps(chk, indent=1))
 print(g[g.panel != "_total_molecules_or_reads"].pivot_table(index=["setting", "unit", "score"], columns="panel", values="AUC").round(3).to_string())
